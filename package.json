@@ -2,9 +2,9 @@
   "name": "learnexpressjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "start": "nodemon --inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +25,9 @@
   "homepage": "https://github.com/tonhue25/learnexpressjs#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "handlebars": "^4.7.8",
+    "morgan": "^1.10.0",
     "nodemon": "^3.0.1"
   }
 }
