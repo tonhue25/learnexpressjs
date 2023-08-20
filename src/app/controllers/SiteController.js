@@ -1,6 +1,10 @@
+const Db = require('../../config/db');
 class SiteController {
     index(rep, res) {
-        res.render('home');
+        Db.getEmployees().then((employee) => {
+            res.json(employee[0]);
+        });
+        //res.render('home');
     }
     search(rep, res) {
         res.render('search');
